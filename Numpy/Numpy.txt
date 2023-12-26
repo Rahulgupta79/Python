@@ -1,0 +1,46 @@
+NumPy is a Python library used for working with arrays.
+It also has functions for working in domain of linear algebra, fourier transform, and matrices.
+NumPy was created in 2005 by Travis Oliphant.
+NumPy stands for Numerical Python.
+
+NumPy arrays are stored at one continuous place in memory unlike lists,
+ so processes can access and manipulate them very efficiently.
+
+NumPy arrray is faster than list because it store data at continuous location in RAM
+ List store data in continuous location but in Ram list data are stored in different-different address.
+
+In NumPy library data are inserted through list/tuple
+    But if you want to insert data from set than it show like set data
+
+NumPy is used to work with arrays. The array object in NumPy is called ndarray.
+
+type(): This built-in Python function tells us the type of the object passed to it.
+ Like in above code it shows that arr is numpy.ndarray type.
+
+We also create n-dimensional array pass multiple list/tuple in [list1,list2.....] (tuple1.tuple2....)
+
+To Know of array which dimensional use arrayName.ndim
+
+The main difference between a copy and a view of an array is that the copy is a new array, 
+and the view is just a view of the original array.
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+x = arr.copy() in this case x array is create copy of arr 
+arr[0] = 42
+
+print(arr)
+print(x)
+
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+x = arr.view() in this case x array is view like original arr
+arr[0] = 42
+
+print(arr)
+print(x)
+
+

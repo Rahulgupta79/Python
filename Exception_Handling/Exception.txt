@@ -1,0 +1,25 @@
+
+Exception is a condition if it not be execute then other
+- codes are not be face any problem to execute
+When we run a program in case of runtime if any error will occur then other lines of code not be executed in that we handle this error
+Exceptions can be handled using Exception handling 
+
+Exception are two types-:
+1.Built in Exception
+2.User Define Exception-In this case we write 
+    Syntax-raise keyword Exception name("Exception message)
+
+
+Python give 4 blocks to handle Exception
+1-try block ->it is necessary block which execute always
+     if occur any error then except block will execute otherwise else block will execute
+2-except block ->In this block we handle error which will come
+3-else block ->In this block execute directly  
+4-finally block ->It is a special block it is execute always whether error occurs or not
+    It is use most in file handling.
+
+Note. We also handle multiple error in that case we will write again except 
+block and type error otherwise we type as
+
+        except (ZeroDivisionError ,otherName of error)or Exception as obj
+            print(obj)
