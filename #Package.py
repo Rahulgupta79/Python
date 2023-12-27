@@ -7,3 +7,4 @@
 #  you need to create an empty file called __init__.py.
 #  This file tells Python that the directory is a package.
 
+print("Welcome")
